@@ -73,8 +73,8 @@ After login you can take guide from home page.<br>
 Then you can create cv from  create page.</p>
             <div class="skills">
                 <span class="active">Web Designer</span><br><hr>
-                <span>Yeshtham Shah</span><p>____</p> <span>Backend</span><br><hr>
-               <span>Sanskar Gupta</span><p>____</p><span>Frontend</span>
+                <span>Yeshtham Shah</span><p>____</p> <span>Frontend</span><br><hr>
+               <span>Sanskar Gupta</span><p>____</p><span>Backend</span>
             </div>
         </div>
     </div>
