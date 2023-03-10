@@ -16,8 +16,7 @@ echo  '</script>';
     <title>registration page</title>
     <style>
         body{
-            background-image: url("https://c4.wallpaperflare.com/wallpaper/965/883/624/manga-one-piece-wallpaper-preview.jpg");
-            background-image: url("https://c4.wallpaperflare.com/wallpaper/536/193/299/flowers-black-simple-background-simple-wallpaper-preview.jpg");
+            background-color: black;
             background-repeat: no-repeat;
             background-size: cover;
 

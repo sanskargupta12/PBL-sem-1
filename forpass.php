@@ -16,7 +16,7 @@ echo  '</script>';
    
     <style> 
     body{
-        background-image: url("https://c4.wallpaperflare.com/wallpaper/907/783/607/sony-xperia-z-stock-blue-flower-wallpaper-preview.jpg");
+        background-color: black;
         background-repeat: no-repeat;
         background-size: cover;
     }
@@ -25,8 +25,7 @@ echo  '</script>';
 
         padding: 2em 6em 2em 6em;
         
-        background-image:url("https://c4.wallpaperflare.com/wallpaper/907/783/607/sony-xperia-z-stock-blue-flower-wallpaper-preview.jpg");
-        
+       background-color: black; 
         color: #ffff;
         font-family: cursive;
         border-radius: 1.25rem;

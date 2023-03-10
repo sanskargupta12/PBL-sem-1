@@ -1,6 +1,7 @@
 <?php
 include_once('connection.php');
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,11 +19,11 @@ include_once('connection.php');
             box-sizing:border-box;
         }
         body{
-           background-image: url("https://th.bing.com/th/id/R.37515f75ab5bfadcc23ef53c8863d0f3?rik=Pcr7PvFNQq7yhA&riu=http%3a%2f%2fimg.pconline.com.cn%2fimages%2fupload%2fupc%2ftx%2fphotoblog%2f1306%2f19%2fc0%2f22269362_22269362_1371608529234.jpg&ehk=rHeD6RC%2fJEqYvJlXq%2beuQiaxynNdOexUKBPVdRo2yLk%3d&risl=&pid=ImgRaw&r=0");
-       
-      /*  background-image : url("https://i.pinimg.com/originals/a1/48/1f/a1481f55cd4a7ffbd9a1c0c6dff26061.jpg");*/        
+           /* background-image: url("https://th.bing.com/th/id/R.37515f75ab5bfadcc23ef53c8863d0f3?rik=Pcr7PvFNQq7yhA&riu=http%3a%2f%2fimg.pconline.com.cn%2fimages%2fupload%2fupc%2ftx%2fphotoblog%2f1306%2f19%2fc0%2f22269362_22269362_1371608529234.jpg&ehk=rHeD6RC%2fJEqYvJlXq%2beuQiaxynNdOexUKBPVdRo2yLk%3d&risl=&pid=ImgRaw&r=0");
+        */
+        background-color: black;
         background-size: contain;
-      font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial;
+        font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial;
     }
     #d{ 
           background-color:black;

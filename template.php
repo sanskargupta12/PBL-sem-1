@@ -1,141 +1,116 @@
-<?php
-include_once('connection.php');
-   
-  
-    $sql = "select * from info";
-
-    $result = ($con->query($sql));
-    $row = []; 
-  
-    if ($result->num_rows > 0) 
-    {
-       $row = $result->fetch_all(MYSQLI_ASSOC);  
-    }   
+<?php 
+include_once("connection.php");
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alignment</title>
-    <style>
-        body{
-            background-color: rgb(0,0,0);
-            color:white;
-        }
-        .container{
-            background-color: rgb(109, 197, 232);
+	<title>My Resume</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			font-size: 14px;
+			line-height: 1.5;
+			margin: 0;
+			padding: 0;
+background-color: black;
+color:white;
+		}
+		div{
+			
             width:900px;
-            border:2x solid rgb(168, 167, 167);
+            border:2x solid white;
             margin: auto;
-            color:black; 
+           
               width: fit-content;
-            
-        }
-        .item{
-            border:2px solid rgb(0, 0, 0);
-            margin:20px;
-            padding: 25px;
-            background: rgb(200, 193, 198);
-
-        }
-        #a{
-            float: left;
-            width: 25%;
-            background-color: rgb(255, 255, 255);
-             color:black;
-
-        }
-        #b{
-            float:none;
-            width: auto;
-             color:black;
-
-        }
-        #c{
-            float:right;
-            width:fit-content;
-            background-color: skyblue;
-            width:800px;
-            
-        }
-        h1{
-            margin:auto;
-            width: fit-content;
-              
-        }
-
-    </style>
+            width:90%;
+		}
+		h1, h2, h3, h4, h5, h6 {
+			margin: 0;
+		}
+		.container {
+			max-width: 800px;
+			margin: 0 auto;
+			padding: 30px;
+		}
+		.header {
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+			margin-bottom: 30px;
+		}
+		.header h1 {
+			flex: 1;
+			margin: 0;
+		}
+		.contact-info {
+			flex: 1;
+			text-align: right;
+		}
+		.contact-info p {
+			margin: 0;
+		}
+		.section {
+			margin-bottom: 30px;
+		}
+		.section h2 {
+			margin-bottom: 10px;
+		}
+		.section h3 {
+			margin-bottom: 5px;
+		}
+		.section ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+		.section ul li {
+			margin-bottom: 5px;
+		}
+	</style>
 </head>
 <body>
-    <div class="container">
-        <h1>Template</h1>
-
-        <div id="a" class="item">
-          <?php
-               if(!empty($row))
-               foreach($row as $rows)
-              { 
-            ?>
-           <h1>Contact</h1><hr>
-           
-           <h3>NAME:</h3>
-           <h2><?php echo $rows['fname']; ?><?php echo $rows['lname']; ?></h2>           
-           <h3>Phone:</h3>
-           <p><?php echo $rows['ftel']; ?></p>
-           <h3>Email:</h3>
-           <p><?php echo $rows['fmail']; ?></p>
- 
-           <h3>website:</h3>
-           <p><?php echo $rows['fweb']; ?></p>
-
-           <h1>Hobbies</h1>
-             <?php echo $rows['hobbies']; ?>
-           <ul>
-            </ul>
-           
-
-           <h1>Skills</h1><hr>
-           <ul>
-               <li>Project Management</li>
-               <li>Creative design</li>
-               <li>Innovative</li>
-               <li>Service-focused</li>
-           </ul>
-          
-           
-        </div>
-        <div id="b" class="item">
-             <h1>Work Expierience</h1><hr>
-             <h2>  <?php echo $rows['fjob']; ?></h2>
-             <h2>  <?php echo $rows['fcom']; ?></h2>                 
-             <p><?php echo $rows['fsd']; ?></p>
-             <p><?php echo $rows['fed']; ?></p>
-  
-            <ul>
-            <?php echo $rows['foth']; ?>
-            </ul>
-            <h1>Qualifications:</h1>
-            <p><?php echo $rows['fquali']; ?></p>
-  
-
-            <h1>Education</h1><hr>
-            <p><?php echo $rows['fcourse']; ?> <b><?php echo $rows['finsti']; ?></b></p>
-            <p><?php echo $rows['strt']; ?><?php echo $rows['end']; ?></p>
-  
-           <h1>Certifications</h1><hr>
-           <p><?php echo $rows['other']; ?></p>
-  
-           <p>PHP Framework(certificate):<b>Zend,Codeigner,Sympfony.</b></p>
-           <p>Programming Languages:<b>JavaSript,HTML,PHP OOP,CSS,SQL,MySQL.</b></p><br>
-
-      </div>
-      
-    </div>
- <?php } ?> 
+	<div class="container">
+		<div class="header">
+			<h1>John Doe</h1>
+			<div class="contact-info">
+				<p>john.doe@example.com</p>
+				<p>555-555-5555</p>
+			</div>
+		</div>
+		<div class="section">
+			<h2>Summary</h2>
+			<p>A highly motivated and detail-oriented software developer with over 5 years of experience in designing and implementing web applications using various technologies.</p>
+		</div>
+		<div class="section">
+			<h2>Experience</h2>
+			<h3>Software Developer</h3>
+			<p>XYZ Corporation</p>
+			<p>Jan 2018 - Present</p>
+			<ul>
+				<li>Designed and developed a web-based project management tool using PHP, MySQL, and jQuery.</li>
+				<li>Implemented RESTful APIs for various features of the project management tool.</li>
+				<li>Integrated various third-party APIs such as Google Maps and Dropbox for additional functionality.</li>
+			</ul>
+			<h3>Web Developer</h3>
+			<p>ABC Company</p>
+			<p>Jun 2015 - Dec 2017</p>
+			<ul>
+				<li>Developed and maintained various client websites using HTML, CSS, and JavaScript.</li>
+				<li>Implemented responsive design for all client websites to ensure compatibility with mobile devices.</li>
+				<li>Managed the company's web hosting and domain registration services.</li>
+			</ul>
+		</div>
+		<div class="section">
+			<h2>Skills</h2>
+			<ul>
+				<li>PHP</li>
+				<li>MySQL</li>
+				<li>JavaScript</li>
+				<li>HTML/CSS</li>
+				<li>jQuery</li>
+				<li>RESTful APIs</li>
+			</ul>
+		</div>
+	</div>
 </body>
 </html>
-<?php   
-    mysqli_close($con);
-?>

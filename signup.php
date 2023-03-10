@@ -53,8 +53,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
     <style>
         body{
            background-color: black;
-            background-image: url("https://c1.wallpaperflare.com/preview/609/748/957/flower-plant-blossom-bloom.jpg");
-            background-repeat: no-repeat;
+           background-repeat: no-repeat;
             background-size: cover;
             
         }
