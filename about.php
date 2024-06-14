@@ -16,7 +16,7 @@ include_once("connection.php");
 }
 
 body{
-  background-color: rgb(0, 84, 84);
+  background-color: rgb(0, 83, 84);
   min-height: 100vh;
     display: flex;
     align-items: center;
