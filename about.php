@@ -5,7 +5,7 @@ include_once("connection.php");
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us Page - FantacyDesigns</title>
+    <title>About Us - FantacyDesigns</title>
     <style>
       *{
     margin: 0;
